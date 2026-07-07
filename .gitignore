@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Environment
+.env
+.env.local
+*.local
+
+# Database (runtime data)
+db/*.db
+db/*.db-journal
+db/*.db-wal
+db/*.db-shm
+
+# Claude local settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+*.swp
