@@ -25,3 +25,22 @@ SEED_WATCHLIST = [
     "DOT-USD",
     "MATIC-USD",
 ]
+
+# Market data
+MARKET_DATA_SOURCE = os.environ.get("CRYPTO_MARKET_DATA_SOURCE", "simulator")
+TICK_INTERVAL = float(os.environ.get("CRYPTO_TICK_INTERVAL", "0.5"))  # seconds
+PER_TICK_VOL = float(os.environ.get("CRYPTO_PER_TICK_VOL", "0.0015"))  # ~0.15% std/tick
+
+# Realistic seed prices for the simulator (USD).
+SEED_PRICES = {
+    "BTC-USD": 60000.0,
+    "ETH-USD": 3000.0,
+    "SOL-USD": 150.0,
+    "XRP-USD": 0.50,
+    "ADA-USD": 0.45,
+    "DOGE-USD": 0.12,
+    "AVAX-USD": 35.0,
+    "LINK-USD": 15.0,
+    "DOT-USD": 6.0,
+    "MATIC-USD": 0.70,
+}
